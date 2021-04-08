@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="App flex justify-around flex-wrap">
       <div className="watch-face w-52 h-64 my-12 text-center subpixel-antialiased shadow-2xl rounded-3xl overflow-hidden">
-        <BrowserRouter>
+        <BrowserRouter basename="/Watch-widget">
           <Switch>
             <Route path="/details">
               <Details />
