@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Smartwatch watchface widget
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. Design by Patryk Ilnicki for Autentika
 
-## Available Scripts
+- Initial design concept on ![Dribbble](https://dribbble.com/shots/9835137-Daily-Calendar-Watch-App-Dark-Mode):
+  ![Design](https://cdn.dribbble.com/users/744746/screenshots/9835137/media/41e79154d55163ea127371f7bff0084a.png?compress=1&resize=1000x750)
 
-In the project directory, you can run:
+## 2. Task list via {JSON}Placeholder
 
-### `npm start`
+- https://jsonplaceholder.typicode.com/
+- API endpoint at https://jsonplaceholder.typicode.com/todos
+- JSON shape format ![JSON format](https://cdn.glitch.com/a7714135-9880-43b0-af1d-145b00d4f4da%2FJsonFormat.png?v=1617899829692)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 3. Libraries
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React.js / React-router
+- Swiper.js
+- Tailwind.css / Sass
 
-### `npm test`
+## 4. Contacts
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- https://spb.hh.ru/resume/91ecb0fcff066733240039ed1f53357a6b504e
