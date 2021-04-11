@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Watch-widget/static/css/main.c979ca51.chunk.css",
-    "main.js": "/Watch-widget/static/js/main.54fdb4b3.chunk.js",
-    "main.js.map": "/Watch-widget/static/js/main.54fdb4b3.chunk.js.map",
-    "runtime-main.js": "/Watch-widget/static/js/runtime-main.1ad22d4d.js",
-    "runtime-main.js.map": "/Watch-widget/static/js/runtime-main.1ad22d4d.js.map",
+    "main.js": "/Watch-widget/static/js/main.a5ebcf2f.chunk.js",
+    "main.js.map": "/Watch-widget/static/js/main.a5ebcf2f.chunk.js.map",
+    "runtime-main.js": "/Watch-widget/static/js/runtime-main.bfb1870a.js",
+    "runtime-main.js.map": "/Watch-widget/static/js/runtime-main.bfb1870a.js.map",
     "static/css/2.ffdd2ca3.chunk.css": "/Watch-widget/static/css/2.ffdd2ca3.chunk.css",
-    "static/js/2.83e9d31c.chunk.js": "/Watch-widget/static/js/2.83e9d31c.chunk.js",
-    "static/js/2.83e9d31c.chunk.js.map": "/Watch-widget/static/js/2.83e9d31c.chunk.js.map",
-    "static/js/3.2b701fd8.chunk.js": "/Watch-widget/static/js/3.2b701fd8.chunk.js",
-    "static/js/3.2b701fd8.chunk.js.map": "/Watch-widget/static/js/3.2b701fd8.chunk.js.map",
+    "static/js/2.ddf672dd.chunk.js": "/Watch-widget/static/js/2.ddf672dd.chunk.js",
+    "static/js/2.ddf672dd.chunk.js.map": "/Watch-widget/static/js/2.ddf672dd.chunk.js.map",
+    "static/js/3.cdc50c52.chunk.js": "/Watch-widget/static/js/3.cdc50c52.chunk.js",
+    "static/js/3.cdc50c52.chunk.js.map": "/Watch-widget/static/js/3.cdc50c52.chunk.js.map",
     "index.html": "/Watch-widget/index.html",
     "static/css/2.ffdd2ca3.chunk.css.map": "/Watch-widget/static/css/2.ffdd2ca3.chunk.css.map",
     "static/css/main.c979ca51.chunk.css.map": "/Watch-widget/static/css/main.c979ca51.chunk.css.map",
-    "static/js/2.83e9d31c.chunk.js.LICENSE.txt": "/Watch-widget/static/js/2.83e9d31c.chunk.js.LICENSE.txt",
+    "static/js/2.ddf672dd.chunk.js.LICENSE.txt": "/Watch-widget/static/js/2.ddf672dd.chunk.js.LICENSE.txt",
     "static/media/arrow-right.aac2ed20.svg": "/Watch-widget/static/media/arrow-right.aac2ed20.svg",
     "static/media/back.ebb3f0eb.svg": "/Watch-widget/static/media/back.ebb3f0eb.svg",
     "static/media/check-square.f6da4c68.svg": "/Watch-widget/static/media/check-square.f6da4c68.svg",
@@ -24,10 +24,10 @@
     "static/media/users.e87b7968.svg": "/Watch-widget/static/media/users.e87b7968.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1ad22d4d.js",
+    "static/js/runtime-main.bfb1870a.js",
     "static/css/2.ffdd2ca3.chunk.css",
-    "static/js/2.83e9d31c.chunk.js",
+    "static/js/2.ddf672dd.chunk.js",
     "static/css/main.c979ca51.chunk.css",
-    "static/js/main.54fdb4b3.chunk.js"
+    "static/js/main.a5ebcf2f.chunk.js"
   ]
 }
