@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Time from "./partials/Time.js";
 import ProgressBar from "./partials/ProgressBar.js";
 function Progress({ leftTasks }) {
@@ -17,7 +18,11 @@ function Progress({ leftTasks }) {
           circleOneStroke="#2833A4"
           circleTwoStroke="#3346FF"
         />
-        <div className="pt-0.5 text-sm text-gray-100">{leftTasks} goals to go</div>
+        <Link to={"/todo"}>
+          <div className="pt-0.5 text-sm text-gray-100">
+            {leftTasks} goals to go
+          </div>
+        </Link>
       </div>
     </>
   );

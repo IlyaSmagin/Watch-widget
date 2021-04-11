@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import IconButton from "./partials/Button.js";
 import Time from "./partials/Time.js";
 import rArrIcon from "../icons/arrow-right.svg";
@@ -11,7 +12,7 @@ function Calendar({ workProp, personalProp }) {
       <div className="text-base font-semibold text-gray-100">Calendar</div>
       <div className="mt-3.5 flex justify-evenly p-2">
         <IconButton
-          link={"/todo"}
+          link={"/calendar"}
           color={"blue"}
           extended={workProp.description}
           icon={workProp.items}
@@ -23,10 +24,18 @@ function Calendar({ workProp, personalProp }) {
           icon={personalProp.items}
         />
       </div>
-      <div className="mt-1">
-        <img className="w-5 mr-1 inline-block" src={rArrIcon} alt="next"></img>
-        <div className="text-sm inline-block text-gray-100">Meeting 08:15</div>
-      </div>
+      <Link to={"/calendar"}>
+        <div className="mt-1">
+          <img
+            className="w-5 mr-1 inline-block"
+            src={rArrIcon}
+            alt="next"
+          ></img>
+          <div className="text-sm inline-block text-gray-100">
+            Meeting 08:15
+          </div>
+        </div>
+      </Link>
     </>
   );
 }

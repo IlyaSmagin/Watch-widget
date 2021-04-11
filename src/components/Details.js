@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import SubHeader from "./partials/subHeader.js";
 import { ReactComponent as LocationIcon } from "../icons/location.svg";
 import { ReactComponent as Users } from "../icons/users.svg";
@@ -10,6 +11,10 @@ function Details({
     participants: ["You", "Ilya"],
   },
 }) {
+  const { name } = useParams();
+  if (name) {
+    event.name = name;
+  }
   return (
     <>
       <SubHeader pageName={"Details"} />
