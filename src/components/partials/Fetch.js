@@ -59,7 +59,23 @@ const placehoderGoals = () => {
 }; */
 function fetchGoals() {
   const url = "https://jsonplaceholder.typicode.com/todos/";
-  return fetch(url).then((response) => response.json());
+  let resPromice = fetch(url)
+    .then((response) => response.json())
+    .then((result) => {
+      const newJSON = [
+        {
+          name: "Work",
+          list: [...result.slice(0, 10)],
+        },
+        {
+          name: "Personal",
+          list: [...result.slice(10, 20)],
+        },
+      ];
+      return newJSON;
+    });
+
+  return resPromice;
 }
 
 /*fetch('https://jsonplaceholder.typicode.com/posts/1')

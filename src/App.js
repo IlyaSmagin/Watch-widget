@@ -8,7 +8,16 @@ import Details from "./components/Details";
 import "./App.sass";
 
 function App() {
-  const [goals, setGoals] = useState([]);
+  const [goals, setGoals] = useState([
+    {
+      name: "Work",
+      list: [],
+    },
+    {
+      name: "Personal",
+      list: [],
+    },
+  ]);
   const [WorkShort, setWorkShort] = useState({
     description: "Work",
     items: -1,
@@ -20,8 +29,12 @@ function App() {
   useEffect(() => {
     fetchGoals().then((result) => {
       setGoals(result);
-      setWorkShort({ description: "Work", items: countUncompleted(goals, 1) });
-      //console.log("IN USEEFFECT OF APP", WorkShort);
+      //console.log(result[0].list, result[1].name);
+      setWorkShort({
+        description: result[0].name,
+        items: countUncompleted(result[0].list),
+      });
+      //console.log("IN USEEFFECT OF APP", result);
     });
 
     // eslint-disable-next-line
@@ -29,17 +42,20 @@ function App() {
 
   useEffect(() => {
     //console.log("Fires on goals update");
-    setWorkShort({ description: "Work", items: countUncompleted(goals, 1) });
+    setWorkShort({
+      description: goals[0].name,
+      items: countUncompleted(goals[0].list),
+    });
     setPersonalCounter({
-      description: "Personal",
-      items: countUncompleted(goals, 2),
+      description: goals[1].name,
+      items: countUncompleted(goals[1].list),
     });
   }, [goals]);
 
-  function countUncompleted(list, num) {
+  function countUncompleted(list) {
     const reducer = (accum, value) =>
-      value.userId === num && value.completed === false ? accum + 1 : accum;
-    //console.log("IN FUN", num, list.reduce(reducer, 0));
+      value.completed === false ? accum + 1 : accum;
+    //console.log("IN FUN", list.reduce(reducer, 0), list, list[0].completed);
     return list.reduce(reducer, 0);
   }
   /* 
@@ -51,17 +67,20 @@ function App() {
       <div className="watch-face w-52 h-64 my-12 text-center subpixel-antialiased shadow-2xl rounded-3xl overflow-hidden">
         <BrowserRouter basename="/Watch-widget">
           <Switch>
-            <Route path="/details">
+            <Route exact path="/">
+              <MainRow WorkList={WorkShort} PersonalList={PersonalCounter} />
+            </Route>
+            <Route exact path="/details">
               <Details />
             </Route>
-            <Route path="/todo">
-              <Todo onTodoChange={setGoals} list={goals} />
+            <Route path="/details/:name">
+              <Details />
             </Route>
             <Route path="/calendar">
               <Timeline list={goals} />
             </Route>
-            <Route exact path="/">
-              <MainRow WorkList={WorkShort} PersonalList={PersonalCounter} />
+            <Route path="/todo">
+              <Todo onTodoChange={setGoals} todos={goals} />
             </Route>
           </Switch>
         </BrowserRouter>
