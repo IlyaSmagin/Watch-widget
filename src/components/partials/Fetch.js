@@ -1,3 +1,60 @@
+function fetchGoals() {
+  const url = "https://jsonplaceholder.typicode.com/todos/";
+  let resPromice = fetch(url)
+    .then((response) => response.json())
+    .then((result) => {
+      const newJSON = [
+        {
+          name: "Work",
+          list: [...result.slice(0, 10)],
+        },
+        {
+          name: "Personal",
+          list: [...result.slice(10, 20)],
+        },
+      ];
+      return newJSON;
+    });
+
+  return resPromice;
+} /* 
+JSON SHAPE
+[
+	{
+		name: "Work",
+		list: [
+				{
+					"userId": 1,
+					"id": 1,
+					"title": "delectus aut autem",
+					"completed": false
+				},
+				{
+                    "userId": 1,
+    				"id": 2,
+    				"title": "quis ut nam facilis et officia qui",
+    				"completed": false
+  				}
+              ]
+	},
+	{
+		name: "Personal",
+		list: [
+				{
+					"userId": 1,
+					"id": 11,
+					"title": "vero rerum temporibus dolor",
+					"completed": true
+				},
+				{
+                    "userId": 1,
+    				"id": 12,
+    				"title": "ipsa repellendus fugit nisi",
+    				"completed": false
+  				}
+              ]
+	}
+]; */
 /* function fetchGoals1() {
   const url = "http://192.168.0.103:8000/api/todo/";
   const headers = {
@@ -57,27 +114,6 @@ const placehoderGoals = () => {
     ],
   });
 }; */
-function fetchGoals() {
-  const url = "https://jsonplaceholder.typicode.com/todos/";
-  let resPromice = fetch(url)
-    .then((response) => response.json())
-    .then((result) => {
-      const newJSON = [
-        {
-          name: "Work",
-          list: [...result.slice(0, 10)],
-        },
-        {
-          name: "Personal",
-          list: [...result.slice(10, 20)],
-        },
-      ];
-      return newJSON;
-    });
-
-  return resPromice;
-}
-
 /*fetch('https://jsonplaceholder.typicode.com/posts/1')
   .then((response) => response.json())
   .then((json) => console.log(json));
