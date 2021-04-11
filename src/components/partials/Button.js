@@ -10,7 +10,8 @@ function IconButton({ link = "/", icon, color = "default", extended = false }) {
       <div className="py-3.5">{icon}</div>
       {extended && (
         <div className="extended">
-          <hr /> <div className="p-0.5">{extended}</div>
+          <hr />
+          <div className="p-0.5">{extended}</div>
         </div>
       )}
     </Link>
