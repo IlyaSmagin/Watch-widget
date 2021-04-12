@@ -6,6 +6,7 @@ import Todo from "./components/Todo";
 import Timeline from "./components/Timeline";
 import Details from "./components/Details";
 import "./App.sass";
+import { ReactComponent as WatchBandStrap } from "./icons/strap.svg";
 
 function App() {
   const [goals, setGoals] = useState([
@@ -63,8 +64,9 @@ function App() {
   console.log("IN APP TOTAL ", goals); */
 
   return (
-    <div className="App flex justify-around flex-wrap">
-      <div className="watch-face w-52 h-64 my-12 text-center subpixel-antialiased shadow-2xl rounded-3xl overflow-hidden">
+    <div className="App flex justify-around flex-wrap items-center">
+      <WatchBandStrap className="w-56 absolute" />
+      <div className="watch-face z-10 w-52 h-64 my-24 text-center subpixel-antialiased shadow-2xl rounded-3xl overflow-hidden">
         <BrowserRouter basename="/Watch-widget">
           <Switch>
             <Route exact path="/">
