@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Watch-widget/static/css/main.a3144147.chunk.css",
-    "main.js": "/Watch-widget/static/js/main.54b331d7.chunk.js",
-    "main.js.map": "/Watch-widget/static/js/main.54b331d7.chunk.js.map",
+    "main.js": "/Watch-widget/static/js/main.da045dce.chunk.js",
+    "main.js.map": "/Watch-widget/static/js/main.da045dce.chunk.js.map",
     "runtime-main.js": "/Watch-widget/static/js/runtime-main.bfb1870a.js",
     "runtime-main.js.map": "/Watch-widget/static/js/runtime-main.bfb1870a.js.map",
     "static/css/2.ffdd2ca3.chunk.css": "/Watch-widget/static/css/2.ffdd2ca3.chunk.css",
-    "static/js/2.ddf672dd.chunk.js": "/Watch-widget/static/js/2.ddf672dd.chunk.js",
-    "static/js/2.ddf672dd.chunk.js.map": "/Watch-widget/static/js/2.ddf672dd.chunk.js.map",
+    "static/js/2.d48cbadd.chunk.js": "/Watch-widget/static/js/2.d48cbadd.chunk.js",
+    "static/js/2.d48cbadd.chunk.js.map": "/Watch-widget/static/js/2.d48cbadd.chunk.js.map",
     "static/js/3.cdc50c52.chunk.js": "/Watch-widget/static/js/3.cdc50c52.chunk.js",
     "static/js/3.cdc50c52.chunk.js.map": "/Watch-widget/static/js/3.cdc50c52.chunk.js.map",
     "index.html": "/Watch-widget/index.html",
     "static/css/2.ffdd2ca3.chunk.css.map": "/Watch-widget/static/css/2.ffdd2ca3.chunk.css.map",
     "static/css/main.a3144147.chunk.css.map": "/Watch-widget/static/css/main.a3144147.chunk.css.map",
-    "static/js/2.ddf672dd.chunk.js.LICENSE.txt": "/Watch-widget/static/js/2.ddf672dd.chunk.js.LICENSE.txt",
+    "static/js/2.d48cbadd.chunk.js.LICENSE.txt": "/Watch-widget/static/js/2.d48cbadd.chunk.js.LICENSE.txt",
     "static/media/arrow-right.aac2ed20.svg": "/Watch-widget/static/media/arrow-right.aac2ed20.svg",
     "static/media/back.ebb3f0eb.svg": "/Watch-widget/static/media/back.ebb3f0eb.svg",
     "static/media/check-square.f6da4c68.svg": "/Watch-widget/static/media/check-square.f6da4c68.svg",
@@ -21,13 +21,14 @@
     "static/media/location.c27503dc.svg": "/Watch-widget/static/media/location.c27503dc.svg",
     "static/media/message.fb8a345a.svg": "/Watch-widget/static/media/message.fb8a345a.svg",
     "static/media/notification.582169e4.svg": "/Watch-widget/static/media/notification.582169e4.svg",
+    "static/media/strap.a0b21c87.svg": "/Watch-widget/static/media/strap.a0b21c87.svg",
     "static/media/users.e87b7968.svg": "/Watch-widget/static/media/users.e87b7968.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.bfb1870a.js",
     "static/css/2.ffdd2ca3.chunk.css",
-    "static/js/2.ddf672dd.chunk.js",
+    "static/js/2.d48cbadd.chunk.js",
     "static/css/main.a3144147.chunk.css",
-    "static/js/main.54b331d7.chunk.js"
+    "static/js/main.da045dce.chunk.js"
   ]
 }
