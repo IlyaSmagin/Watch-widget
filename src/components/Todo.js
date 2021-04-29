@@ -6,8 +6,7 @@ import "swiper/swiper.scss";
 import "swiper/components/pagination/pagination.scss";
 import List from "./partials/List";
 function Todo({ onTodoChange, todos }) {
-  SwiperCore.use([Virtual]);
-  SwiperCore.use([Navigation, Pagination]);
+  SwiperCore.use([Navigation, Pagination, Virtual]);
   const categories = todos.map((el) => el.name);
   function checkItem(id, ChekedId) {
     let newTodos = todos;
