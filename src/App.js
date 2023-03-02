@@ -59,12 +59,12 @@ function App() {
     //console.log("IN FUN", list.reduce(reducer, 0), list, list[0].completed);
     return list.reduce(reducer, 0);
   }
-  /* 
+  /*
   console.log("IN APP ", WorkShort , PersonalCounter);
   console.log("IN APP TOTAL ", goals); */
 
   return (
-    <div className="App flex justify-around flex-wrap items-center">
+    <div className="App flex justify-around flex-wrap items-center h-full">
       <WatchBandStrap className="w-56 absolute" />
       <div className="watch-face z-10 w-52 h-64 my-24 text-center subpixel-antialiased shadow-2xl rounded-3xl overflow-hidden">
         <BrowserRouter basename="/Watch-widget">

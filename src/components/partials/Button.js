@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function IconButton({ link = "/", icon, color = "purple", extended = false }) {
+function IconButton({ link = "/", icon, color = "default", extended = false }) {
   return (
     <Link
       to={link}

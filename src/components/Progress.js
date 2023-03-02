@@ -11,6 +11,7 @@ function Progress({ leftTasks }) {
       </div>
       <div>
         <div className="text-base font-semibold text-gray-100">Goals</div>
+        <Link to={"/todo"}>
         <ProgressBar
           progress={CompletedPerc}
           size={100}
@@ -18,7 +19,6 @@ function Progress({ leftTasks }) {
           circleOneStroke="#2833A4"
           circleTwoStroke="#3346FF"
         />
-        <Link to={"/todo"}>
           <div className="pt-0.5 text-sm text-gray-100">
             {leftTasks} goals to go
           </div>
